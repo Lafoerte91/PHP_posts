@@ -22,7 +22,7 @@ class Database {
       $this->pdo = new PDO($dsn, $this->user, $this->password);
       $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch(PDOException $e) {
-      die("Ошибка подключения: {$e->getMessage()}")
+      die("Ошибка подключения: {$e->getMessage()}");
     }
   }
 

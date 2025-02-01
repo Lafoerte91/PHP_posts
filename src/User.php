@@ -7,13 +7,13 @@ class User {
   }
 
   public function getId():int {
-    return $this->id . '<br>';
+    return $this->id;
   }
   public function getUsername():string {
-    return $this->username . '<br>';
+    return $this->username;
   }
   public function getRole():string {
-    return $this->role . '<br>';
+    return $this->role;
   }
   public function checkPassword(string $plainPassword):bool {
     return password_verify($plainPassword, $this->hashedPassword);
